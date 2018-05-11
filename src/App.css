@@ -4,17 +4,45 @@
 
 .Pokedex {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600px;
+  height: 740px;
   background-image: url("./images/Pokedex.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
+.Pokedex button {
+  width: 50%;
+  background-color: red;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: none;
+  outline: none;
+  padding: 15px 15px;
+
+}
+.Image img {
+  margin-left: 10px;
+  width: 200px;
+  height: auto;
+}
 .Items {
-  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  margin-left: 10px;
+}
+.Stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-left: 60px;
 }
 
 

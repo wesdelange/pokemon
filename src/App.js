@@ -9,7 +9,7 @@ class App extends Component {
   constructor (){
     super ()
     this.state = {
-      name:'', weigth:null, image:''}
+      name:'', weigth:null, height:'', move:'', image:''}
 }
   componentDidMount() {
     const pokemonURL = 'https://pokeapi.co/api/v2/pokemon/1/';
@@ -33,9 +33,13 @@ class App extends Component {
   axios.get(temp).then((data) => {
     console.log(data.data.name);
     console.log(data.data.weight);
+    console.log(data.data.height);
+    console.log(data.data.moves[0].move.name);
     console.log(data.data.sprites.front_default);
     this.setState({name: data.data.name,
-      weight: data.data.weight, 
+      weight: data.data.weight,
+      height: data.data.height,
+      move: data.data.moves[0].move.name, 
       image: data.data.sprites.front_default})
   }).catch((err) => {
     console.log(err);
@@ -50,12 +54,16 @@ class App extends Component {
       <div className="App">
         <div className="Pokedex">
           <div className="Items">
-          <button type="button" onClick={this.addInfo}>Click to change Pokemon</button>
-          <div className="Image">
-            <img src={this.state.image} alt="Pokemon"/>
+              <div className="Image">
+                <img src={this.state.image} alt="Pokemon"/>
+              </div>
+            <h1>Special Move:<br />{this.state.move}</h1>
+            <button type="button" onClick={this.addInfo}>Change Pokemon</button>
           </div>
-          <h1>Name: {this.state.name}</h1>
-          <h1>Weight: {this.state.weight}</h1>
+          <div className="Stats">
+            <h1>Name: {this.state.name}</h1>
+            <h1>Weight: {this.state.weight}</h1>
+            <h1>Height: {this.state.height}</h1>
           </div>
         </div>
       </div>
