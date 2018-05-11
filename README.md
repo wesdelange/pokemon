@@ -1,3 +1,9 @@
+First Project using React.
+Obtained API for Pokemon information, created an App to showcase a random Pokemon with stats and image.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
