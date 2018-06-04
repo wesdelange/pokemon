@@ -1,3 +1,5 @@
+# Pokemon Pokedex
+
 Our third project at RED Academy. Our first project using React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
