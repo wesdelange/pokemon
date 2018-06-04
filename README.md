@@ -18,6 +18,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Filter through API to showcase a random Pokemon with stats and image.
 
 
+## Desktop Version
+
+![Alt text](/images/desktop-screenshot.png "Desktop Version")
 
 
 
